@@ -1,0 +1,340 @@
+/* Education Section */
+#education h2 {
+    color: white;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+/* Education Cards */
+.education-card {
+    background: #88b8de;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 25px rgba(128, 0, 255, 0.25);
+    transition: all 0.4s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.education-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.15),
+        transparent
+    );
+    transition: 0.8s;
+}
+
+.education-card:hover::before {
+    left: 100%;
+}
+
+.education-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 15px 40px rgba(168, 85, 247, 0.6);
+    border-color: #a855f7;
+}
+
+.education-card .card-title {
+    color: #190101;
+    font-weight: 700;
+}
+
+.education-card .college-name {
+    color: #321b49;
+    font-weight: 600;
+}
+
+.education-card p {
+    color: #0d0e10;
+    line-height: 1.8;
+}
+
+
+/* Skills Section */
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.skill-card {
+    width: 140px;
+    height: 160px;
+    background: #88b8de;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+    transition: all 0.4s ease;
+    box-shadow: 0 8px 20px rgba(128, 0, 255, 0.2);
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(168, 85, 247, 0.6);
+}
+
+.skill-card img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.skill-card h5 {
+    color: rgb(12, 12, 12);
+    font-weight: 600;
+    margin: 0;
+}
+
+
+/* Projects Section */
+
+.project-card {
+    background: #88b8de;
+    border-radius: 20px;
+    padding: 30px;
+    height: 100%;
+    border: 1px solid rgba(106, 13, 173, 0.15);
+    box-shadow: 0 10px 25px rgba(106, 13, 173, 0.12);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 40px rgba(106, 13, 173, 0.25);
+    border-color: #6a0dad;
+}
+
+.project-card h3 {
+    color: #0e0e0e;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #555;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.tech-stack {
+    margin-top: 20px;
+}
+
+.tech-stack span {
+    display: inline-block;
+    background: #f3e8ff;
+    color: #6a0dad;
+    padding: 8px 14px;
+    border-radius: 25px;
+    margin: 5px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+#projects h2 {
+    color: #0c0c0c;
+    font-weight: 700;
+}
+
+
+
+/* Contact Flip Cards */
+
+.flip-card {
+    background: transparent;
+    width: 100%;
+    height: 100px;
+    perspective: 800px;
+    cursor: pointer;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    border-radius: 20px;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(106, 13, 173, 0.2);
+}
+
+/* Front Side */
+.flip-card-front {
+    background: #88b8de;
+    color: #0b0b0b;
+    border: 2px solid #e9d5ff;
+}
+
+.flip-card-front h4 {
+    font-weight: 700;
+}
+
+/* Back Side */
+.flip-card-back {
+    background: #2d859b;
+    color: rgb(255, 255, 255);
+    transform: rotateY(180deg);
+    padding: 0px;
+}
+
+.flip-card-back p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+.contact-link {
+    text-decoration: none;   /* Remove underline */
+    color: #ffffff;          /* Change color */
+    font-size: 1.2rem;         /* Increase size */
+    font-weight: 100;        /* Make bold */
+    transition: 0.3s ease;
+}
+#box-bg{
+    width:100%;
+    height: 100%;
+    background-color:#84c7c6;
+}
+.const-logo{
+    width: 26px;
+    height:26px;
+}
+
+
+.resume-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #9e5fcb;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(106, 13, 173, 0.3);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.resume-btn:hover {
+    background-color: #4b0082;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(106, 13, 173, 0.5);
+}
+
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+.hero-image img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #6a0dad;
+    box-shadow: 0 10px 30px rgba(106, 13, 173, 0.3);
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+#about {
+    padding-top: 80px;
+}
+
+/* Certifications Timeline */
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: #6a0dad;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 60px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 10px;
+    width: 24px;
+    height: 24px;
+    background: #6a0dad;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 0 15px rgba(106, 13, 173, 0.4);
+}
+
+.timeline-content {
+    background: #88b8de;
+    padding: 20px 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(106, 13, 173, 0.12);
+    transition: 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: translateX(10px);
+}
+
+.timeline-content h4 {
+    color: #2e1065;
+    margin-bottom: 10px;
+}
+
+.timeline-content p {
+    color: #555;
+    margin: 0;
+}
